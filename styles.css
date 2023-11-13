@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-image: url('Afbeeldingen/header_foto_brug.png');
+    background-size: cover;
+    background-position: center;
+    color: rgb(249, 196, 196);
+    text-align: center;
+    padding: 50px;
+    font-size: 24px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section,
+.right-section {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.article {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.article img {
+    margin-left: 20px;
+    max-width: 100%;
+}
+
+@media all and (min-width: 715px) {
+    .main-content {
+        flex-direction: row;
+    }
+
+    .left-section {
+        flex: 3;
+        padding: 20px;
+    }
+
+    .right-section {
+        flex: 9;
+        background-color: #64e0cd;
+        padding: 20px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3a90ff;
+    color: white;
+}
+
+@media all and (max-width: 500px) {
+    body {
+        color: rgb(14, 14, 14);
+        background-color: #a5ede2;
+    }
+}
